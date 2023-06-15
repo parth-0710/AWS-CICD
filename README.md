@@ -22,14 +22,16 @@
 3. AWS CodePipeline following steps:
 
       Step 1: CodePipeline
+   
       Step 2: Code Source (CodeCommit or Github)
+   
       Step 3: Skip Build(Feature)
+   
       Step 4: Choose Code Depoloy
 
 
 
-
-Appspec.yml file structure:
+appspec.yml file structure:
 
 
 --------------------
