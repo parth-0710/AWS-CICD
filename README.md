@@ -1,33 +1,33 @@
-
-
-
 1. Create IAM Role for EC2 and AWS CodeDeploy
 
-   EC2RoleForS3
-   CodeDeployRole
+      EC2RoleForS3
+   
+      CodeDeployRole
 
-3. Create EC2 Instance and Attach that EC2 role.
+2. Create EC2 Instance , Attach that EC2 Role and Install CodeDepoloy Agent
 
-and install code depoloy agent
-
-sudo yum update
-sudo yum install ruby
-sudo yum install wget
-wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
-chmod +x ./install
-sudo ./install auto
-
-
-3. aws codepipeline following steps:
-
-Step 1: CodePipeline
-Step 2: Code Source (CodeCommit or Github)
-Step 3: Skip Build(Feature)
-Step 4: Choose Code Depoloy
+      sudo yum update
+   
+      sudo yum install ruby
+   
+      sudo yum install wget
+   
+      wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+   
+      chmod +x ./install
+   
+      sudo ./install auto
 
 
+3. AWS CodePipeline following steps:
 
-#=======================================================================================================
+      Step 1: CodePipeline
+      Step 2: Code Source (CodeCommit or Github)
+      Step 3: Skip Build(Feature)
+      Step 4: Choose Code Depoloy
+
+
+
 
 Appspec.yml file structure:
 
